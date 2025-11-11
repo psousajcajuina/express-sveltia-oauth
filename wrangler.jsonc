@@ -8,6 +8,18 @@
 	"main": "src/index.ts",
 	"compatibility_date": "2025-11-11",
 	"compatibility_flags": ["nodejs_compat", "enable_nodejs_process_v2", "nodejs_compat_populate_process_env"],
+	"env": {
+		"production": {
+			"vars": {
+				"NODE_ENV": "production",
+				"LOG_LEVEL": 3000,
+				"INSECURE_COOKIES": 0,
+				"ALLOWED_DOMAINS": "cajuinasaogeraldo.com.br,*.cajuinasaogeraldo.com.br,cornflowerblue-wildcat-224161.hostingersite.com",
+				"GITHUB_CLIENT_ID": "v23liY59hmseEozXHnE",
+				"GITHUB_HOSTNAME": "github.com",
+			},
+		},
+	},
 	"observability": {
 		"enabled": false,
 		"head_sampling_rate": 1,
