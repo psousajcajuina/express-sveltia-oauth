@@ -17,7 +17,7 @@
 				"ALLOWED_DOMAINS": "cajuinasaogeraldo.com.br,*.cajuinasaogeraldo.com.br,cornflowerblue-wildcat-224161.hostingersite.com",
 				"GITHUB_CLIENT_ID": "v23liY59hmseEozXHnE",
 				"GITHUB_HOSTNAME": "github.com",
-			},
+			},"name": "cajuina-cms-auth",
 		},
 	},
 	"observability": {
