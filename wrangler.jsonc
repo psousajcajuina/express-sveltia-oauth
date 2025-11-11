@@ -18,11 +18,12 @@
 			"invocation_logs": true,
 		},
 		"traces": {
-			"enabled": false,
+			"enabled": true,
 			"persist": true,
 			"head_sampling_rate": 1,
 		},
 	},
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
