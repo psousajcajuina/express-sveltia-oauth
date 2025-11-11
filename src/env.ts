@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 const envSchema = z
 	.object({
@@ -36,12 +36,12 @@ const envSchema = z
 			const hasGitHub = env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET;
 			const hasGitLab = env.GITLAB_CLIENT_ID && env.GITLAB_CLIENT_SECRET;
 			const hasBitbucket = env.BITBUCKET_CLIENT_ID && env.BITBUCKET_CLIENT_SECRET;
-			console.log(`GITHUB: ${hasGitHub}`, `GITLAB ${hasGitLab}`, ` BITBUCKET ${hasBitbucket}`);
-			console.log(process.env);
 			return hasGitHub || hasGitLab || hasBitbucket;
 		},
 		{
-			message: 'At least one OAuth provider must be configured (GitHub, GitLab, or Bitbucket)' + ` -- ${JSON.stringify(process.env)}`,
+			message:
+				'At least one OAuth provider must be configured (GitHub, GitLab, or Bitbucket)' +
+				` -- ${JSON.stringify(process.env).replace('\\', '')}`,
 		},
 	);
 

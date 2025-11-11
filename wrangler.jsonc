@@ -12,7 +12,7 @@
 		"production": {
 			"vars": {
 				"NODE_ENV": "production",
-				"LOG_LEVEL": 3000,
+				"LOG_LEVEL": "info",
 				"INSECURE_COOKIES": 0,
 				"ALLOWED_DOMAINS": "cajuinasaogeraldo.com.br,*.cajuinasaogeraldo.com.br,cornflowerblue-wildcat-224161.hostingersite.com",
 				"GITHUB_CLIENT_ID": "v23liY59hmseEozXHnE",
