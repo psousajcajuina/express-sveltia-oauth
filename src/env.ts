@@ -44,6 +44,8 @@ const envSchema = z
       const hasGitLab = env.GITLAB_CLIENT_ID && env.GITLAB_CLIENT_SECRET;
       const hasBitbucket =
         env.BITBUCKET_CLIENT_ID && env.BITBUCKET_CLIENT_SECRET;
+        console.log(`GITHUB: ${hasGitHub}`, `GITLAB ${hasGitLab}`, ` BITBUCKET ${hasBitbucket}`);
+				console.log(process.env);
       return hasGitHub || hasGitLab || hasBitbucket;
     },
     {
