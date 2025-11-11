@@ -41,7 +41,7 @@ const envSchema = z
 			return hasGitHub || hasGitLab || hasBitbucket;
 		},
 		{
-			message: 'At least one OAuth provider must be configured (GitHub, GitLab, or Bitbucket)' + ` -- ${process.env}`,
+			message: 'At least one OAuth provider must be configured (GitHub, GitLab, or Bitbucket)' + ` -- ${JSON.stringify(process.env)}`,
 		},
 	);
 
